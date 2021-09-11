@@ -40,8 +40,14 @@ function slot(){
          let rightrandom = document.getElementById("right").innerText = emojis[right]
          let table = document.getElementById("roleta")
          table.style.boxShadow="3px 3px 10px 3px #FF8080, -5px 3px 10px 3px #da6cc9, -3px -3px 10px 3px #da6cc9, 7px -3px 10px 3px #80C7FF, 10px 5px 10px 4px #E488FF, -5px 5px 10px 3px #da6cc9, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0)"
-         table.style.border = "2px dotted"
+         table.style.border = "2px solid"
          table.style.borderColor = cores[left]
+        document.getElementById("left").style.border = "1px solid hotpink"
+        document.getElementById("center").style.border = "1px solid hotpink"
+        document.getElementById("right").style.border = "1px solid hotpink"
+        document.getElementById("left").style.borderColor = cores[left]
+        document.getElementById("center").style.borderColor = cores[center]
+        document.getElementById("right").style.borderColor = cores[right]
          
          if (counter > 5){
              let final_left = emojis[left]
