@@ -66,6 +66,7 @@ function slot(){
                 document.getElementById("vitoria").innerHTML = vitoria
                 table.style.boxShadow="3px 3px 5px 3px #ffff99, -5px 3px 5px 3px #ffff00, -3px -3px 5px 3px #cccc00, 5px -3px 5px 3px #ffff99, 5px 5px 5px 4px #ffff99, -5px 5px 10px 3px #ffff99, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0)"
                 document.getElementById("dinheiro").classList.remove("display")
+                document.getElementById("banana").classList.remove("display")
 
              }
             else if((final_left == final_center) || (final_left == final_right) || (final_center == final_right)){
@@ -74,6 +75,8 @@ function slot(){
                  
                  document.getElementById("derrota").innerHTML = derrota
                  document.getElementById("dinheiro").classList.add("display")
+                 document.getElementById("banana").classList.add("display")
+
             }
             
             else {
@@ -82,6 +85,7 @@ function slot(){
                 derrota++;
                 document.getElementById("derrota").innerHTML = derrota
                 document.getElementById("dinheiro").classList.add("display")
+                document.getElementById("banana").classList.add("display")
             }
 
             counter = 0;

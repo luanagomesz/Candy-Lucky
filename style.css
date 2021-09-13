@@ -1,8 +1,14 @@
 
+html{
+
+    height: 100vh;
+
+}
+
+
 body{
     margin: 0;
     width: 100vw;
-    height: 100vh;
     background: -moz-linear-gradient(top, #000000 0%, #0e334e 45%, #f182e1 100%);
     background: -webkit-linear-gradient(top, #000000 0%, #0b2b42 45%, #ec84dd 100%);
     background: linear-gradient(to bottom, #000000 0%, #0a273b 45%, #da6cc9 100%);
@@ -43,6 +49,7 @@ main{
 }
 #collum{
  width: 50vw;
+z-index: 5;
 }
 #collum2{
     display: flex;
@@ -84,6 +91,7 @@ table{
 
 
 #slot{
+    z-index: 5;
     width: 22vw;
     margin-left: 3px;
     border-style: none;
@@ -115,7 +123,7 @@ table{
     font-weight: 200;
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 35px;
-
+    margin-bottom: 0px;
 }
 
 td{
@@ -151,6 +159,7 @@ td{
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     background-color: black;
+    z-index: 5;
 }
 
 tbody{
@@ -161,6 +170,97 @@ tbody{
 }
 
 #dinheiro{
-  width: 100vw;
+    position: fixed;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+}
+#boxResultado{
 
+height: 100%;
+}
+
+#boximg{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#banana{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+@media (min-width:800px){
+    
+    #playbox{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 35vh;
+    }
+    #Jogar{
+        z-index: 5;
+        width: 400px;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 900;
+        color: #FFFFFF;
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        background-color: black;
+    }
+    #dinheiro{
+        position: fixed;
+        width: 50vw;
+        height: 100%;
+        z-index: 1;
+      }
+      #text h1{
+        text-align: center;
+        font-size: 5vw;
+        padding-top: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 900;
+        color: #FFFFFF;
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    #text{
+        height: 10vw;
+    }
+    
+    table{
+        border-spacing: 0px;
+        display: flex;
+        transform: translateX(-50%);
+        width: 30vw;
+    }   
+
+    tbody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1.5vw;
+    }
+    td{
+        font-size: 7vw;
+    }
+    #resultado{
+        padding-top: 5px;
+
+    }
+
+    #box1, #box2{
+        height: 130px;
+        font-size: 30px;
+    }
 }
