@@ -58,7 +58,7 @@ function slot(){
 
              if ((final_left == final_center) && (final_left == final_right)){
 
-                document.getElementById("resultado").innerText = "Você venceu!!! 🥳"
+                document.getElementById("resultado").innerText = "Você venceu!!! 🏆"
                 let audio = new Audio('money.mp3');
                 audio.loop = false;
                 audio.play();
